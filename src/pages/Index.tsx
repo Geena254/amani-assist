@@ -1,7 +1,6 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, Users, Calendar, FileText, Share2, PresentationChart } from "lucide-react";
+import { CheckCircle, Users, Calendar, FileText, Share2, Presentation } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
@@ -27,7 +26,7 @@ const Index = () => {
       description: "Strategic social media presence management to enhance your brand and engage with your audience effectively."
     },
     {
-      icon: PresentationChart,
+      icon: Presentation,
       title: "Conference & Event Reporting",
       description: "Comprehensive reporting and documentation services for conferences and events, capturing key insights and outcomes."
     }
@@ -135,7 +134,7 @@ const Index = () => {
             
             <div className="text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <PresentationChart className="w-8 h-8 text-primary" />
+                <Presentation className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Professional</h3>
               <p className="text-muted-foreground">
