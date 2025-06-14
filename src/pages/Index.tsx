@@ -1,35 +1,35 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, Users, Calendar, FileText, Share2, Presentation, User } from "lucide-react";
+import { CheckCircle, Users, Calendar, FileText, Share2, Presentation, User, Target, Heart } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
   const services = [
     {
       icon: CheckCircle,
-      title: "Personal Errands",
-      description: "Let us handle your daily tasks so you can focus on what matters most. From shopping to appointments, we've got you covered."
+      title: "Personal Errands & Shopping Assistance",
+      description: "Let us handle your daily tasks and shopping needs so you can focus on what matters most. From grocery runs to appointment scheduling, we've got you covered."
     },
     {
       icon: Calendar,
-      title: "Event & Project Support",
-      description: "Professional coordination and management for your events and projects, ensuring seamless execution from start to finish."
+      title: "PA Services for Events & Projects",
+      description: "Professional coordination and management for your events and projects, ensuring seamless execution from start to finish with meticulous attention to detail."
     },
     {
       icon: FileText,
-      title: "Data Entry & Documentation",
-      description: "Accurate and efficient data management services to keep your information organized and accessible."
-    },
-    {
-      icon: Share2,
-      title: "Social Media Management",
-      description: "Strategic social media presence management to enhance your brand and engage with your audience effectively."
+      title: "Data Entry & Management",
+      description: "Accurate and efficient data management services to keep your information organized and accessible, handled with precision and confidentiality."
     },
     {
       icon: Presentation,
       title: "Conference & Event Reporting",
-      description: "Comprehensive reporting and documentation services for conferences and events, capturing key insights and outcomes."
+      description: "Comprehensive reporting and documentation services for conferences and events, capturing key insights and outcomes with professional thoroughness."
+    },
+    {
+      icon: Share2,
+      title: "Social Media Management & Reporting",
+      description: "Strategic social media presence management and detailed reporting to enhance your brand and engage with your audience effectively."
     }
   ];
 
@@ -71,11 +71,12 @@ const Index = () => {
       <section className="py-20 px-4 text-center bg-gradient-to-br from-primary/5 to-secondary/10">
         <div className="container mx-auto max-w-4xl">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
-            Discreet, Reliable, Professional
+            Reliable, Discreet, Professional
             <span className="block text-primary mt-2">Support Services</span>
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Get tailored support for your life and work. We handle the details so you can focus on what truly matters.
+          <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+            At Amani Assist, we specialize in providing reliable, discreet, and professional support for individuals and businesses. 
+            We ensure every task is handled with precision, efficiency, and a personal touch.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8 py-3" onClick={handleExploreServices}>
@@ -84,6 +85,23 @@ const Index = () => {
             <Button size="lg" variant="outline" className="text-lg px-8 py-3" onClick={handleContactUs}>
               Contact Us
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="py-20 px-4 bg-secondary/10">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-12">
+            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Target className="w-8 h-8 text-primary" />
+            </div>
+            <h2 className="text-4xl font-bold mb-6 text-foreground">Our Mission</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Our mission is simple: to make your life and business run smoother, so you can focus on what matters most. 
+              Whether you need help managing errands, coordinating events, documenting conferences, handling data entry, or managing social media, 
+              we're here to help you stay organized, prepared, and ahead.
+            </p>
           </div>
         </div>
       </section>
@@ -123,12 +141,13 @@ const Index = () => {
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4 text-foreground">Why Choose Amani Assist?</h2>
-            <p className="text-xl text-muted-foreground">
-              We understand that your time is valuable and your privacy is paramount.
+            <p className="text-xl text-muted-foreground mb-8">
+              With a strong foundation built on integrity, reliability, professionalism, and client-centered service, 
+              Amani Assist has supported diverse clients, from corporate conferences to private individuals, fintech startups, and public events.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-primary" />
@@ -158,6 +177,24 @@ const Index = () => {
                 Expert service delivery with attention to detail and quality standards.
               </p>
             </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Heart className="w-8 h-8 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Flexible</h3>
+              <p className="text-muted-foreground">
+                Adaptable solutions tailored to your unique needs and requirements.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              We pride ourselves on being flexible, efficient, and attentive to detail. 
+              Our diverse experience spans corporate conferences, private individuals, fintech startups, and public events, 
+              ensuring we understand the unique challenges across different sectors.
+            </p>
           </div>
         </div>
       </section>
