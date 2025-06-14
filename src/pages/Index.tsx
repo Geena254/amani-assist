@@ -55,7 +55,7 @@ const Index = () => {
       <header className="border-b bg-white/95 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-full"></div>
+            <div className="w-8 h-8 font-bold text-primary bg-primary rounded-full">A</div>
             <span className="text-2xl font-bold text-primary">Amani Assist</span>
           </div>
           <nav className="hidden md:flex space-x-6">
@@ -203,7 +203,7 @@ const Index = () => {
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-foreground">Meet the Owner</h2>
+            <h2 className="text-4xl font-bold mb-4 text-foreground">Meet the who handles all the work</h2>
             <p className="text-xl text-muted-foreground">
               The dedicated professional behind Amani Assist
             </p>
@@ -214,7 +214,7 @@ const Index = () => {
               <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <User className="w-12 h-12 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">[Owner Name]</h3>
+              <h3 className="text-2xl font-bold mb-4 text-foreground">Diana Ngina</h3>
               <p className="text-muted-foreground mb-6">
                 [Add owner bio, qualifications, and experience here. This section can be customized to highlight the owner's background, expertise, and passion for providing exceptional support services.]
               </p>
@@ -287,7 +287,7 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <div className="w-6 h-6 bg-primary rounded-full"></div>
+              <div className="w-6 h-6 bg-primary font-bold text-primary rounded-full">A</div>
               <span className="text-lg font-semibold text-primary">Amani Assist</span>
             </div>
             <p className="text-muted-foreground text-center md:text-right">
