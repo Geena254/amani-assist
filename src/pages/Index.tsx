@@ -55,7 +55,9 @@ const Index = () => {
       <header className="border-b bg-white/95 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 font-bold text-foreground bg-primary rounded-full">A</div>
+            <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-lg">A</span>
+            </div>
             <span className="text-2xl font-bold text-primary">Amani Assist</span>
           </div>
           <nav className="hidden md:flex space-x-6">
@@ -250,7 +252,9 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <div className="w-6 h-6 bg-primary font-bold text-foreground rounded-full">A</div>
+              <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-sm">A</span>
+              </div>
               <span className="text-lg font-semibold text-primary">Amani Assist</span>
             </div>
             <p className="text-muted-foreground text-center md:text-right">
