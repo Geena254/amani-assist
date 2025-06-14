@@ -1,6 +1,7 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, Users, Calendar, FileText, Share2, Presentation } from "lucide-react";
+import { CheckCircle, Users, Calendar, FileText, Share2, Presentation, User } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
@@ -32,6 +33,22 @@ const Index = () => {
     }
   ];
 
+  const handleGetStarted = () => {
+    document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleExploreServices = () => {
+    document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleContactUs = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleScheduleConsultation = () => {
+    window.open('mailto:info@amaniassist.com?subject=Consultation Request', '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -46,7 +63,7 @@ const Index = () => {
             <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
             <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
           </nav>
-          <Button>Get Started</Button>
+          <Button onClick={handleGetStarted}>Get Started</Button>
         </div>
       </header>
 
@@ -61,10 +78,10 @@ const Index = () => {
             Get tailored support for your life and work. We handle the details so you can focus on what truly matters.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-lg px-8 py-3">
+            <Button size="lg" className="text-lg px-8 py-3" onClick={handleExploreServices}>
               Explore Services
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-3">
+            <Button size="lg" variant="outline" className="text-lg px-8 py-3" onClick={handleContactUs}>
               Contact Us
             </Button>
           </div>
@@ -145,6 +162,35 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Owner Section */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4 text-foreground">Meet the Owner</h2>
+            <p className="text-xl text-muted-foreground">
+              The dedicated professional behind Amani Assist
+            </p>
+          </div>
+          
+          <Card className="max-w-2xl mx-auto">
+            <CardContent className="p-8 text-center">
+              <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <User className="w-12 h-12 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-foreground">[Owner Name]</h3>
+              <p className="text-muted-foreground mb-6">
+                [Add owner bio, qualifications, and experience here. This section can be customized to highlight the owner's background, expertise, and passion for providing exceptional support services.]
+              </p>
+              <div className="text-sm text-muted-foreground">
+                <p>Years of Experience: [Add years]</p>
+                <p>Specialization: [Add specialization]</p>
+                <p>Contact: info@amaniassist.com</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="py-20 px-4 bg-primary text-primary-foreground">
         <div className="container mx-auto max-w-4xl text-center">
@@ -152,7 +198,7 @@ const Index = () => {
           <p className="text-xl mb-8 opacity-90">
             Let us handle the details while you focus on what matters most to you.
           </p>
-          <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
+          <Button size="lg" variant="secondary" className="text-lg px-8 py-3" onClick={handleContactUs}>
             Contact Amani Assist Today
           </Button>
         </div>
@@ -190,7 +236,7 @@ const Index = () => {
                   <p className="text-muted-foreground">Available upon request</p>
                 </div>
                 
-                <Button className="w-full mt-4">
+                <Button className="w-full mt-4" onClick={handleScheduleConsultation}>
                   Schedule a Consultation
                 </Button>
               </div>
@@ -208,7 +254,7 @@ const Index = () => {
               <span className="text-lg font-semibold text-primary">Amani Assist</span>
             </div>
             <p className="text-muted-foreground text-center md:text-right">
-              © 2024 Amani Assist. Professional support services tailored to your needs.
+              © 2025 Amani Assist.
             </p>
           </div>
         </div>
