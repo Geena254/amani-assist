@@ -21,11 +21,6 @@ const Index = () => {
       icon: Share2,
       title: "Reporting & Documentation",
       description: "Conference & event rapporteur services. Note-taking & report compilation. Summary creation for key discussions."
-    },
-    {
-      icon: Presentation,
-      title: "Social Media Management",
-      description: "Content creation. Community Management. Reporting and Analytics."
     }
   ];
 
