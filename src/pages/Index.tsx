@@ -8,11 +8,6 @@ import heroAnimation from '@/animations/Animation - orange.json';
 const Index = () => {
   const services = [
     {
-      icon: CheckCircle,
-      title: "Personal Errands & Assistance",
-      description: "Shopping (groceries, gifts, personal needs). House hunting (research & site visits). Custom requests (as per client needs)."
-    },
-    {
       icon: Calendar,
       title: "PA Services for Events & Projects",
       description: "Event coordination & support. Scheduling & administrative assistance. On-site or remote personal assistance."
@@ -130,8 +125,7 @@ const Index = () => {
             <h2 className="text-4xl font-bold mb-4 text-foreground">About Us</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Amani Assist delivers reliable and efficient support for individuals and businesses,
-              ensuring tasks are handled with professionalism and discretion. From running errands
-              and event assistance to data management and conference reporting, Amani Assist streamlines
+              ensuring tasks are handled with professionalism and discretion. From Personal assistance services to data management and conference reporting, Amani Assist streamlines
               operations with precision and care. Services are flexible and customizable to meet each client's unique needs.
             </p>  
           </div>
